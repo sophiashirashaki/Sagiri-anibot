@@ -377,28 +377,11 @@ async def start_(client: anibot, message: Message, mdata: dict):
                 return
         await client.send_message(
             gid,
-            text=f"""Moshi-Moshi! 
-**✪ I am a bot that helps you to find various things related to Anime.**
-✪ I've some features for you :)
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛  If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
+            text=f"""**Moshi-Moshi!!**
+✪ **I'm a bot to help find everything related to Anime.**
+✪ Contact my owner @erosei_1.
 
-button = []
-button.append(
-    [
-        InlineKeyboardButton(text="Owner", url="t.me/erosei_1"),
-    ],
-    [
-        InlineKeyboardButton(text="Anime Group", url="t.me/AnimeLovers_group"),
-        InlineKeyboardButton(
-            text="Support!​​", url="t.me/OkaeriUserbot"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="➗ Add Sagiri To Your Group ➗", url="t.me/Sagiribaka_bot?startgroup=new"),
-    ],
-]
+➛If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group.
 
         )
     else:
