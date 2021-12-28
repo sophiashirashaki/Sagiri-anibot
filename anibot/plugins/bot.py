@@ -529,7 +529,7 @@ async def pong_(client: anibot, message: Message, mdata: dict):
 @control_user
 async def feed_(client: anibot, message: Message, mdata: dict):
     owner = (await client.get_users(OWNER[0])).username
-    await client.send_message(mdata['chat']['id'], f"For issues or queries please contact @{owner} or join @hanabi_support")
+    await client.send_message(mdata['chat']['id'], f"For issues or queries please contact @{owner} or join @OkaeriUserbot")
 
 ###### credits to @NotThatMF on tg since he gave me the code for it ######
 
