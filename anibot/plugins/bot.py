@@ -385,20 +385,20 @@ async def start_(client: anibot, message: Message, mdata: dict):
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Kanata", callback_data="Skyzu_"),
+        InlineKeyboardButton(text="Owner", url="t.me/erosei_1"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Anime Group", url="t.me/AnimeLovers_group"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="Support!​​", url="t.me/OkaeriUserbot"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Kanata To Your Group ➗", url="t.me/Kanatapro_bot?startgroup=new"),
+            text="➗ Add Sagiri To Your Group ➗", url="t.me/Sagiribaka_bot?startgroup=new"),
     ],
 ]
-"""
+
         )
     else:
         if not await (GROUPS.find_one({"id": gid})):
