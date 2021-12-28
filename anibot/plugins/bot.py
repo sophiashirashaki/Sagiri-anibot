@@ -377,10 +377,28 @@ async def start_(client: anibot, message: Message, mdata: dict):
                 return
         await client.send_message(
             gid,
-            text=f"""Kon'nichiwa!!!
-I'm {bot.first_name} bot and I can help you get info on Animes, Mangas, Characters, Airings, Schedules, Watch Orders of Animes, etc
-For more info send /help in here.
-If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
+            text=f"""Moshi-Moshi! 
+**✪ I am a bot that helps you to find various things related to Anime.**
+✪ I've some features for you :)
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛  If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
+
+buttons = [
+    [
+        InlineKeyboardButton(text="About Kanata", callback_data="Skyzu_"),
+    ],
+    [
+        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(
+            text="Try inline!​​", switch_inline_query_current_chat=""
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="➗ Add Kanata To Your Group ➗", url="t.me/Kanatapro_bot?startgroup=new"),
+    ],
+]
+"""
         )
     else:
         if not await (GROUPS.find_one({"id": gid})):
