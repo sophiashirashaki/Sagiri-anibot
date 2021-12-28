@@ -383,7 +383,7 @@ async def start_(client: anibot, message: Message, mdata: dict):
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛  If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
 
-buttons = [
+btn = InlineKeyboardMarkup(
     [
         InlineKeyboardButton(text="Owner", url="t.me/erosei_1"),
     ],
