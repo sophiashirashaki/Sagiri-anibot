@@ -62,7 +62,7 @@ def control_user(func):
                         await clog('ANIBOT', f'UserID: {user}', 'SPAM')
                     if USER_WC[user] == 5:
                         await IGNORE.insert_one({'_id': user})
-                        await message.reply_text('You have been exempted from using this bot now due to spamming 5 times consecutively!!!\nTo remove restriction plead to @hanabi_support')
+                        await message.reply_text('You have been exempted from using this bot now due to spamming 5 times consecutively!!!\nTo remove restriction plead to @OkaeriUserbot')
                         await clog('ANIBOT', f'UserID: {user}', 'BAN')
                         return
                     await asyncio.sleep(USER_WC[user])
