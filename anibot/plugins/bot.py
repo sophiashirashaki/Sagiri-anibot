@@ -379,7 +379,8 @@ async def start_(client: anibot, message: Message, mdata: dict):
             gid,
             text=f"""Moshi-Moshi!!!
 I'm Sagiri ANIME BOT and I can help you get info on Animes, Mangas, Characters, Airings, Schedules, Watch Orders of Animes, etc
-For more info send /help in here.
+✪ For more info send /help in here.
+✪ Managed By @erosei_1
 If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
         )
     else:
