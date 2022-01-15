@@ -51,7 +51,7 @@ Telegram Bot Repo Capable of fetching the following Info via Anilist API inspire
  /top - to retrieve top animes for a genre or tag
  /reverse - Reverse search powered by tracemoepy
  /watch - Fetches watch order for anime series
- /feedback - contact bot owner or main support grp at @hanabi_support
+ /feedback - contact bot owner or main support grp at @Alvin_Image_Editor_Group
  /me or /activity - Get Anilist recent activity
  /fillers - To get list of anime fillers
  /disable - To disable a command in group
@@ -73,7 +73,7 @@ Telegram Bot Repo Capable of fetching the following Info via Anilist API inspire
 
 
 ## How to host
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/sophiashirashaki/anibot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/sophiashirashaki/Sagiri-anibot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 ## Credits
@@ -86,8 +86,6 @@ Telegram Bot Repo Capable of fetching the following Info via Anilist API inspire
 * [@blank_x](https://t.me/blank_x) on tg for [sukuinote](https://gitlab.com/blank-x/sukuinote)
 
 
-For improvements PR or contact [@LostB053](https://t.me/lostb053) or [@hanabi_support](https://t.me/hanabi_support)<br>
+For improvements PR or contact [@erosei_1](https://t.me/erosei_1) or [@Alvin_Image_Editor_Group](https://t.me/Alvin_Image_Editor_Group)<br>
 Can ask for support too but don't expect much (since i myself am learning yet)<br>
 <br>
-<h4>Note: I dropped SauceNAO stuff cuz i couldnt represent it in some good looking manner<br>
-I would be grateful if anybody can help me parse results and organize them like <a href='https://t.me/reverseSearchBot'>@reverseSearchBot</a></h4>Something nearby but good looking would suffice too
