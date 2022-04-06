@@ -387,7 +387,7 @@ If you wish to use me in a group start me by /start{BOT_NAME} command after addi
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="➕ Add Sagiri To Your Group ➕", url=""),
+                    InlineKeyboardButton(text="➕ Add Sagiri To Your Group ➕", url="t.me/Sagiribaka_bot?startgroup=new"),
                  ],
                  [
                     InlineKeyboardButton(text="Support", url="https://t.me/AkoUpdate"),
