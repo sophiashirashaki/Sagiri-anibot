@@ -1,1 +1,1 @@
-worker: python3 -m Sagiri-anibot
+worker: python3 -m anibot
