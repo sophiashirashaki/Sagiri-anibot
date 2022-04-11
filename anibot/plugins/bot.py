@@ -384,20 +384,7 @@ I'm Sagiri ANIME BOT and I can help you get info on Animes, Mangas, Characters, 
 ✪ Managed By @AkoHere
 
 If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="➕ Add Sagiri To Your Group ➕", url="t.me/Sagiribaka_bot?startgroup=new"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Support", url="https://t.me/AkoUpdate"),
-                    InlineKeyboardButton(text="Update", url="https://t.me/projectsupdates"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Help❓", url="https://t.me/Sagiribaka_bot/?start=help"),
-                 ]
-                ]
-            ),
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Help", url=f"https://t.me/{bot_us}/?start=help")]])
         )
     else:
         if not await (GROUPS.find_one({"id": gid})):
