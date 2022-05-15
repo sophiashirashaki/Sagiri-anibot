@@ -5,8 +5,6 @@ from KoboRobot.events import register
 from anibot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/05a1fdada665ccbc27971.jpg"
-
 @anibot.on_message(~filters.private & filters.command(['about', f'about{BOT_NAME}']))
 @control_user
 async def awake(event):
