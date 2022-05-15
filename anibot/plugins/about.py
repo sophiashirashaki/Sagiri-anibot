@@ -7,7 +7,8 @@ from anibot import telethn as tbot
 
 PHOTO = "https://telegra.ph/file/05a1fdada665ccbc27971.jpg"
 
-@register(pattern=("/about"))
+@anibot.on_message(~filters.private & filters.command(['about', f'about{BOT_NAME}']))
+@control_user
 async def awake(event):
   TEXT = f"**Hi, I'm Sagiri Ani-Bot.** \n\n"
   TEXT += "⚪ **I'm Working Properly** \n\n"
