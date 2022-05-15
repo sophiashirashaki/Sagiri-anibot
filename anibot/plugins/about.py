@@ -2,7 +2,7 @@ import os
 import re
 from telethon import events, Button
 from KoboRobot.events import register
-from KoboRobot import telethn as tbot
+from anibot import telethn as tbot
 
 
 PHOTO = "https://telegra.ph/file/05a1fdada665ccbc27971.jpg"
