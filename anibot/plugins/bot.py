@@ -381,10 +381,22 @@ async def start_(client: anibot, message: Message, mdata: dict):
 I'm Sagiri ANIME BOT and I can help you get info on Animes, Mangas, Characters, Airings, Schedules, Watch Orders of Animes, etc.
 
 ✪ For more info send /help in here.
-✪ Managed By @AkoHere
+✪ Managed By @Projectsupdates
 
-If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Help", url=f"https://t.me/{bot_us}/?start=help")]])
+If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group.
+
+➛ Find the list of available commands with Help & Commands button below. ××"""
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Help & Commands", url="https://t.me/{bot_us}/?start=help"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Update", url="https://t.me/projectsupdates"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/AkoUpdate"),
+                 ]
+                ]
+            ),
         )
     else:
         if not await (GROUPS.find_one({"id": gid})):
@@ -418,7 +430,8 @@ async def help_(client: anibot, message: Message, mdata: dict):
     text='''This is a small guide on how to use me\n\n**Basic Commands:**\nUse /ping or !ping cmd to check if bot is online
 Use /start or !start cmd to start bot in group or pm
 Use /help or !help cmd to get interactive help on available bot cmds
-Use /feedback cmd to contact bot owner'''
+Use /feedback cmd to contact bot owner
+Use /about cmd to see about this bot'''
     if id_ in OWNER:
         await client.send_message(gid, text=text, reply_markup=buttons)
         await client.send_message(
@@ -462,7 +475,8 @@ async def help_list_parser(client: anibot, cq: CallbackQuery, cdata: dict):
     text='''This is a small guide on how to use me\n\n**Basic Commands:**\nUse /ping or !ping cmd to check if bot is online
 Use /start or !start cmd to start bot in group or pm
 Use /help or !help cmd to get interactive help on available bot cmds
-Use /feedback cmd to contact bot owner'''
+Use /feedback cmd to contact bot owner
+Use /about cmd to see about this bot'''
     await cq.edit_message_text(text=text, reply_markup=buttons)
 
 
@@ -533,7 +547,7 @@ async def feed_(client: anibot, message: Message, mdata: dict):
     owner = (await client.get_users(OWNER[0])).username
     await client.send_message(mdata['chat']['id'], f"For issues or queries please contact @{owner} or join @OkaeriUserbot")
 
-###### credits to @NotThatMF on tg since he gave me the code for it ######
+###### credits to @erosei_1 on tg since he gave me the code for it ######
 
 
 @anibot.on_message(filters.command(['eval', f'eval{BOT_NAME}'], prefixes=trg) & filters.user(OWNER))
