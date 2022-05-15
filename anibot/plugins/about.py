@@ -1,7 +1,6 @@
 import os
 import re
 from telethon import events, Button
-from KoboRobot.events import register
 from anibot import telethn as tbot
 
 
