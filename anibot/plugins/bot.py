@@ -386,17 +386,7 @@ I'm Sagiri ANIME BOT and I can help you get info on Animes, Mangas, Characters, 
 If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group.
 
 ➛ Find the list of available commands with Help & Commands button below. ××"""
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Help & Commands", url="https://t.me/{bot_us}/?start=help"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Update", url="https://t.me/projectsupdates"),
-                    InlineKeyboardButton(text="Support", url="https://t.me/AkoUpdate"),
-                 ]
-                ]
-            ),
+
         )
     else:
         if not await (GROUPS.find_one({"id": gid})):
